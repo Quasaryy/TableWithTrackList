@@ -12,8 +12,9 @@
 		D2DDD5D429803803005F0A65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2DDD5D229803803005F0A65 /* Main.storyboard */; };
 		D2DDD5D629803803005F0A65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2DDD5D529803803005F0A65 /* Assets.xcassets */; };
 		D2DDD5D929803803005F0A65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2DDD5D729803803005F0A65 /* LaunchScreen.storyboard */; };
-		D2DDD5E1298038D6005F0A65 /* TrackListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DDD5E0298038D6005F0A65 /* TrackListViewController.swift */; };
 		D2DDD5E329803D1E005F0A65 /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DDD5E229803D1E005F0A65 /* Tracks.swift */; };
+		D2DDD5E529805A69005F0A65 /* TrackListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DDD5E429805A69005F0A65 /* TrackListTableViewController.swift */; };
+		D2DDD5E929806817005F0A65 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DDD5E829806817005F0A65 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,9 @@
 		D2DDD5D529803803005F0A65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2DDD5D829803803005F0A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2DDD5DA29803803005F0A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2DDD5E0298038D6005F0A65 /* TrackListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewController.swift; sourceTree = "<group>"; };
 		D2DDD5E229803D1E005F0A65 /* Tracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
+		D2DDD5E429805A69005F0A65 /* TrackListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListTableViewController.swift; sourceTree = "<group>"; };
+		D2DDD5E829806817005F0A65 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +63,30 @@
 				D2DDD5CC29803803005F0A65 /* AppDelegate.swift */,
 				D2DDD5CE29803803005F0A65 /* SceneDelegate.swift */,
 				D2DDD5D229803803005F0A65 /* Main.storyboard */,
-				D2DDD5E229803D1E005F0A65 /* Tracks.swift */,
-				D2DDD5E0298038D6005F0A65 /* TrackListViewController.swift */,
+				D2DDD5E6298067D1005F0A65 /* ViewControllers */,
+				D2DDD5E7298067E1005F0A65 /* Model */,
 				D2DDD5D529803803005F0A65 /* Assets.xcassets */,
 				D2DDD5D729803803005F0A65 /* LaunchScreen.storyboard */,
 				D2DDD5DA29803803005F0A65 /* Info.plist */,
 			);
 			path = TableWithTrackList;
+			sourceTree = "<group>";
+		};
+		D2DDD5E6298067D1005F0A65 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2DDD5E429805A69005F0A65 /* TrackListTableViewController.swift */,
+				D2DDD5E829806817005F0A65 /* DetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D2DDD5E7298067E1005F0A65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2DDD5E229803D1E005F0A65 /* Tracks.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +162,9 @@
 			files = (
 				D2DDD5CD29803803005F0A65 /* AppDelegate.swift in Sources */,
 				D2DDD5CF29803803005F0A65 /* SceneDelegate.swift in Sources */,
-				D2DDD5E1298038D6005F0A65 /* TrackListViewController.swift in Sources */,
+				D2DDD5E529805A69005F0A65 /* TrackListTableViewController.swift in Sources */,
 				D2DDD5E329803D1E005F0A65 /* Tracks.swift in Sources */,
+				D2DDD5E929806817005F0A65 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
